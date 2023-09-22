@@ -10,7 +10,7 @@ namespace ConsoleApp2
     {
         public class Hojadevida
         {
-            public string mantenimiento { get; set; }
+            private string mantenimiento { get; set; }
         }
 
 
