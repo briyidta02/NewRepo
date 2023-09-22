@@ -10,12 +10,12 @@ namespace ConsoleApp2
     {
         public class Licencia
         {
-        public string NombreConductor { get; set; }
-        public int IdentificacionPersona { get; set; }
+        private string NombreConductor { get; set; }
+        private int IdentificacionPersona { get; set; }
 
-        public DateTime FechaVigencia  { get; set; }
-        public DateTime FechaExpediente { get; set; }
-        public string ClaseVehiculo { get; set; }
+        private DateTime FechaVigencia  { get; set; }
+        private DateTime FechaExpediente { get; set; }
+        private string ClaseVehiculo { get; set; }
             public string Servicio { get; set; }
 
 
