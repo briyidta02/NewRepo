@@ -8,10 +8,10 @@ namespace ConsoleApp2
 {
         public class Conductor
         {
-            public string Nombre { get; set; }
-            public int Telefono { get; set; }
-            public string Direccion { get; set; }
-            public int identificacion { get; set; }
+            private string Nombre { get; set; }
+            private int Telefono { get; set; }
+            private string Direccion { get; set; }
+            private int identificacion { get; set; }
 
 }
 }
