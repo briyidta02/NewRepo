@@ -10,16 +10,16 @@ namespace ConsoleApp2
     {
         public class mantenimiento
         {
-            public DateTime FechaInicio { get; set; }
-            public string MarcaAceite { get; set; }
-            public string Servicio { get; set; }
-            public double Kilometraje { get; set; }
-            public double ProximoCambio { get; set; }
-            public double Costo { get; set; }
-            public double Lineamientos { get; set; }
-            public string NombreTaller { get; set; }
-            public string NombreMecanico { get; set; }
-            public string Frenos { get; set; }
+            private DateTime FechaInicio { get; set; }
+            private string MarcaAceite { get; set; }
+            private string Servicio { get; set; }
+            private double Kilometraje { get; set; }
+            private double ProximoCambio { get; set; }
+            private double Costo { get; set; }
+            private double Lineamientos { get; set; }
+            private string NombreTaller { get; set; }
+            private string NombreMecanico { get; set; }
+            private string Frenos { get; set; }
 
         }
 }
