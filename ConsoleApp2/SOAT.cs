@@ -10,9 +10,9 @@ namespace ConsoleApp2
     {
         public class Soat
         {
-            public DateTime  FechaFinal { get; set; }
-        public DateTime FechaProxima { get; set; }
-        public int NumeroSoat { get; set; }
+            private DateTime  FechaFinal { get; set; }
+        private DateTime FechaProxima { get; set; }
+        private int NumeroSoat { get; set; }
 
 
         }
