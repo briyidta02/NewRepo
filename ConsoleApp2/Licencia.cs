@@ -16,7 +16,7 @@ namespace ConsoleApp2
         private DateTime FechaVigencia  { get; set; }
         private DateTime FechaExpediente { get; set; }
         private string ClaseVehiculo { get; set; }
-            public string Servicio { get; set; }
+            private string Servicio { get; set; }
 
 
         }
