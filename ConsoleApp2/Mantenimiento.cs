@@ -10,8 +10,21 @@ namespace ConsoleApp2
     {
         public class mantenimiento
         {
-            private DateTime FechaInicio { get; set; }
+            private DateTime _Fechainicio
+            public DateTime FechaInicio
+            {
+                get
+                {
+                    return _Fechainicio;
+                }
+                set
+                {
+                    _Fechainicio = value;
+                }
+            }
+
             private string MarcaAceite { get; set; }
+
             private string Servicio { get; set; }
             private double Kilometraje { get; set; }
             private double ProximoCambio { get; set; }
