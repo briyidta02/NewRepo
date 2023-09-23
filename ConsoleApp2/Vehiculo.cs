@@ -9,12 +9,78 @@ namespace ConsoleApp2
  
         public class Vehiculo
         {
-            private string Marca { get; set; }
-            private int AniLanzamiento { get; set; }
-            private string Velocidad { get; set; }
-            private string Color { get; set; }
-            private string Tipo { get; set; }
-            private int Modelo { get; set; }
+        private string _marca;
+        public string Marca
+        {
+            get
+            {
+                return _marca;
+            }
+            set
+            {
+                _marca = value;
+            }
+        }
+        private int _alineamiento;
+        public int alineamiento 
+        {
+            get
+            {
+                return _alineamiento;
+            }
+            set
+            {
+                _alineamiento = value;
+            }
+        }
+        private string _Velocidad;
+        public string Velocidad
+        {
+            get
+            {
+                return _Velocidad;
+            }
+            set
+            {
+                _Velocidad = value;
+            }
+        }
+        private string _Color;
+        public string color
+        {
+            get
+            {
+                return _Color ;
+            }
+            set
+            {
+                _Color = value;
+            }
+        }
+        private string _Tipo;
+        public string Tipo
+        {
+            get
+            {
+                return _Tipo;
+            }
+            set
+            {
+                _Tipo = value;
+            }
+        }
+        private int _Modelo;
+        public int Modelo
+        {
+            get
+            {
+                return _Modelo;
+            }
+            set
+            {
+                _Modelo = value;
+            }
+        }
 
 
 
