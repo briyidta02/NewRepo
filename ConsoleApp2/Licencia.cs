@@ -8,14 +8,84 @@ namespace ConsoleApp2
 {
     public class Licencia
     {
-        private string NombreConductor { get; set; }
-        private int IdentificacionPersona { get; set; }
 
-        private DateTime FechaVigencia { get; set; }
-        private DateTime FechaExpediente { get; set; }
-        private string ClaseVehiculo { get; set; }
-        private string Servicio { get; set; }
+        private int _Identificacionpersona;
+        public int IdentificacionPersona
+        {
+            get
+            {
+                return _Identificacionpersona;
+            }
+            set
+            {
+                _Identificacionpersona = value;
+            }
+        }
+        private DateTime _Fechavigencia;
+        public DateTime FechaVigencia
+        {
+            get
+            {
+                return _Fechavigencia;
+            }
+            set
+            {
+                _Fechavigencia = value;
+            }
+        }
 
+
+        private DateTime _Fechaexpediente { get; set; }
+        public DateTime FechaExpediente
+        {
+            get
+            {
+                return _Fechaexpediente;
+            }
+            set
+            {
+                _Fechaexpediente = value;
+            }
+        }
+        private string _Clasevehiculo { get; set; }
+
+        public string ClaseVehiculo
+        {
+            get
+            {
+                return _Clasevehiculo;
+            }
+            set
+            {
+                _Clasevehiculo = value;
+            }
+        }
+        private string _Servicio { get; set; }
+        public string Servicio
+        {
+            get
+            {
+                return _Servicio;
+            }
+            set
+            {
+                _Servicio = value;
+            }
+        }
+
+        private string _Nombreconductor;
+         
+        public string NombreConductor
+        {
+            get
+            {
+                return _Nombreconductor;
+            }
+            set
+            {
+                _Nombreconductor = value;
+            }
+        }
     }
 }
 
