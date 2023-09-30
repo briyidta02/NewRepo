@@ -35,7 +35,7 @@ namespace ConsoleApp2
         }
 
 
-        private DateTime _Fechaexpediente { get; set; }
+        private DateTime _Fechaexpediente 
         public DateTime FechaExpediente
         {
             get
@@ -47,7 +47,7 @@ namespace ConsoleApp2
                 _Fechaexpediente = value;
             }
         }
-        private string _Clasevehiculo { get; set; }
+        private string _Clasevehiculo 
 
         public string ClaseVehiculo
         {
@@ -60,7 +60,7 @@ namespace ConsoleApp2
                 _Clasevehiculo = value;
             }
         }
-        private string _Servicio { get; set; }
+        private string _Servicio 
         public string Servicio
         {
             get
@@ -85,7 +85,22 @@ namespace ConsoleApp2
             {
                 _Nombreconductor = value;
             }
+
         }
+
+        public Licencia(int IdentificacionPersona, DateTime FechaVigencia, DateTime FechaFinal, DateTime FechaExpediente, string ClaseVehiculo, string Servicio, string NombreConductor) {
+
+            _Identificacionpersona = IdentificacionPersona;
+            _Fechavigencia = FechaVigencia;
+            _Fechaexpediente = FechaExpediente;
+            _Clasevehiculo = ClaseVehiculo;
+            _Servicio = Servicio;
+            _Nombreconductor = NombreConductor;
+
+        }
+
+            
+
     }
 }
 
