@@ -35,7 +35,7 @@ namespace ConsoleApp2
         }
 
 
-        private DateTime _Fechaexpediente 
+        private DateTime _Fechaexpediente;
         public DateTime FechaExpediente
         {
             get
@@ -47,7 +47,7 @@ namespace ConsoleApp2
                 _Fechaexpediente = value;
             }
         }
-        private string _Clasevehiculo 
+        private string _Clasevehiculo;
 
         public string ClaseVehiculo
         {
@@ -60,7 +60,7 @@ namespace ConsoleApp2
                 _Clasevehiculo = value;
             }
         }
-        private string _Servicio 
+        private string _Servicio;
         public string Servicio
         {
             get
@@ -98,9 +98,6 @@ namespace ConsoleApp2
             _Nombreconductor = NombreConductor;
 
         }
-
-            
-
     }
 }
 

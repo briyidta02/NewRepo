@@ -28,7 +28,7 @@ namespace ConsoleApp2
             {
                 get
                 {
-                         return _Fechaproxima;   
+                    return _Fechaproxima;
                 }
                 set
                 {
@@ -49,13 +49,15 @@ namespace ConsoleApp2
                 }
             }
 
+            public Soat(int NumeroSoat, DateTime FechaProxima, DateTime FechaFinal)
+            {
+                _Numerosoat = NumeroSoat;
+                _Fechaproxima = FechaProxima;
+                _fechafinal = FechaFinal;
+            }
         }
 
-        public Soat(int NumeroSoat, DateTime FechaProxima, DateTime FechaFinal)
-        {
-            _Numerosoat = NumeroSoat;
-            _Fechaproxima = FechaProxima;
-            _fechafinal = FechaFinal;
-        }
+        
     }
+}
 

@@ -10,7 +10,7 @@ namespace ConsoleApp2
     {
         public class mantenimiento
         {
-            private DateTime _Fechainicio
+            private DateTime _Fechainicio;
             public DateTime FechaInicio
             {
                 get
@@ -36,7 +36,7 @@ namespace ConsoleApp2
                 }
             }
 
-            private string _Servicio
+            private string _Servicio;
             public string Servicio
             {
                 get
@@ -48,7 +48,7 @@ namespace ConsoleApp2
                     _Servicio = value;
                 }
             }
-            private double _Kilometraje
+            private double _Kilometraje;
             public double Kilometraje
             {
                 get
@@ -60,7 +60,7 @@ namespace ConsoleApp2
                     _Kilometraje = value;
                 }
             }
-            private double _Proximocambio 
+            private double _Proximocambio;
             public double ProximoCambio
             {
                 get
