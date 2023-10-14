@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -95,7 +96,7 @@ namespace ConsoleApp2
                     _Lineamientos = value;
                 }
             }
-            private string _Nombretaller
+            private string _Nombretaller;
                   public string NombreTaller
             {
                 get
@@ -130,6 +131,23 @@ namespace ConsoleApp2
                 {
                     _Frenos = value;
                 }
+            }
+
+            public mantenimiento (DateTime FechaInicio, string MarcaAceite, string Servicio, double Kilometraje, double ProximoCambio, double Costo, double Lineamiento, string NombreTaller, string NombreMecanico, string Frenos)
+            {
+                _Fechainicio = FechaInicio;
+                _Marcasceite = MarcaAceite;
+                _Servicio = Servicio;
+                _Kilometraje = Kilometraje;
+                _Proximocambio = ProximoCambio;
+                _Costo = Costo;
+                _Lineamientos = Lineamiento;
+                _Nombretaller = NombreTaller;
+                _Nombremecanico = NombreMecanico;
+                _Frenos = Frenos;
+
+
+
             }
         }
     }
