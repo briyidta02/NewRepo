@@ -58,6 +58,15 @@ namespace ConsoleApp2
             {
                 _identificacion = value;
             }
+
+        }
+        public Conductor (string Nombre, int Telefono, string Direccion,  int Identificacion)
+        {
+            _Nombre = Nombre;
+            _Telefono = Telefono;
+            _Direccion= Direccion;
+            _identificacion= Identificacion;
+
         }
     }
 }
