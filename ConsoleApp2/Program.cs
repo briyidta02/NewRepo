@@ -11,7 +11,7 @@
             Console.WriteLine("Su nivel de velozidad es: " + vehiculo.Velocidad);
             Console.WriteLine("el color es: " + vehiculo.color);
             Console.WriteLine("El tipo de carro es:" + vehiculo.Tipo);
-            Console.WriteLine("el modelo del carro es del ano: " + vehiculo.Modelo);
+            Console.WriteLine("el modelo del carro es del ano es: " + vehiculo.Modelo);
         }
     }
 }
