@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp2
 {
- 
-        public class Vehiculo
-        {
+
+    public class Vehiculo
+    {
         private string _marca;
         public string Marca
         {
@@ -22,7 +22,7 @@ namespace ConsoleApp2
             }
         }
         private int _alineamiento;
-        public int alineamiento 
+        public int alineamiento
         {
             get
             {
@@ -50,7 +50,7 @@ namespace ConsoleApp2
         {
             get
             {
-                return _Color ;
+                return _Color;
             }
             set
             {
@@ -82,8 +82,15 @@ namespace ConsoleApp2
             }
         }
 
+        public Vehiculo(string Marca, int alineamiento, string Velocidad, string color, string Tipo, int Modelo)
+        {
+            _marca = Marca;
+            _alineamiento = alineamiento;
+            _Velocidad = Velocidad;
+            _Color = color;
+            _Tipo = Tipo;
+            _Modelo = Modelo;
 
-
-
+        }
     }
 }
