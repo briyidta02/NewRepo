@@ -6,58 +6,53 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp2
 {
-    internal class SOAT
+    public class Soat
     {
-        public class Soat
+        private string _fechafinal;
+        public string FechaFinal
         {
-            private DateTime _fechafinal;
-            public DateTime FechaFinal
+            get
             {
-                get
-                {
-                    return _fechafinal;
-                }
-                set
-                {
-                    _fechafinal = value;
-                }
+                return _fechafinal;
             }
-
-            private DateTime _Fechaproxima;
-            public DateTime FechaProxima
+            set
             {
-                get
-                {
-                    return _Fechaproxima;
-                }
-                set
-                {
-                    _Fechaproxima = value;
-                }
-            }
-            private int _Numerosoat;
-            public int NumeroSoat
-            {
-                get
-                {
-                    return _Numerosoat;
-                }
-                set
-                {
-                    _Numerosoat = value;
-
-                }
-            }
-
-            public Soat(int NumeroSoat, DateTime FechaProxima, DateTime FechaFinal)
-            {
-                _Numerosoat = NumeroSoat;
-                _Fechaproxima = FechaProxima;
-                _fechafinal = FechaFinal;
+                _fechafinal = value;
             }
         }
 
-        
+        private String _Fechaproxima;
+        public string FechaProxima
+        {
+            get
+            {
+                return _Fechaproxima;
+            }
+            set
+            {
+                _Fechaproxima = value;
+            }
+        }
+        private int _Numerosoat;
+        public int NumeroSoat
+        {
+            get
+            {
+                return _Numerosoat;
+            }
+            set
+            {
+                _Numerosoat = value;
+            }
+        }
+    
+        public Soat(int NumeroSoat, String FechaProxima,string FechaFinal)
+        {
+            _Numerosoat = NumeroSoat;
+            _Fechaproxima = FechaProxima;
+            _fechafinal = FechaFinal;
+        }
     }
 }
+
 
