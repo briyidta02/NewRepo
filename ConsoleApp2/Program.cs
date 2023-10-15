@@ -34,6 +34,20 @@
             Console.WriteLine("Direccion del conductor:" + conductor.Direccion);
             Console.WriteLine("Numero de identificacion:" + conductor.Identificacion);
 
+            Console.WriteLine("**INFORMACION MANTENIMIENTO**");
+            mantenimiento Mantenimiento = new mantenimiento("02-06-2022","Formula 1","mantenimiento general",160648,02-12-2022,105.000,0.5,"MECATRONIX","Richar Monsalve","Equilibrados");
+            Console.WriteLine("Fecha de inicio de mantenimiento:" + Mantenimiento.FechaInicio);
+            Console.WriteLine("Marca de aceite: " + Mantenimiento.MarcaAceite);
+            Console.WriteLine("Servicio de mantenimiento:" + Mantenimiento.Servicio);
+            Console.WriteLine("Kilometraje : " + Mantenimiento.Kilometraje);
+            Console.WriteLine("Proximo mantenimiento :" + Mantenimiento.ProximoCambio);
+            Console.WriteLine("Costo de mantenimiento: " + Mantenimiento.Costo);
+            Console.WriteLine("Liniamiento:" + Mantenimiento.Lineamiento);
+            Console.WriteLine("Nombre de taller: " + Mantenimiento.NombreTaller);
+            Console.WriteLine("Nombre de mecanico:" + Mantenimiento.NombreMecanico);
+            Console.WriteLine(" Estado de frenos" + Mantenimiento.Frenos);
+
+
         }
     }
 }

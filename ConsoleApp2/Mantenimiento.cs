@@ -7,12 +7,11 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp2
 {
-    internal class Mantenimiento
-    {
+
         public class mantenimiento
         {
-            private DateTime _Fechainicio;
-                  public DateTime FechaInicio
+            private String _Fechainicio;
+                  public String FechaInicio
             {
                 get
                 {
@@ -133,7 +132,7 @@ namespace ConsoleApp2
                 }
             }
 
-            public mantenimiento (DateTime FechaInicio, string MarcaAceite, string Servicio, double Kilometraje, double ProximoCambio, double Costo, double Lineamiento, string NombreTaller, string NombreMecanico, string Frenos)
+            public mantenimiento (String FechaInicio, string MarcaAceite, string Servicio, double Kilometraje, double ProximoCambio, double Costo, double Lineamiento, string NombreTaller, string NombreMecanico, string Frenos)
             {
                 _Fechainicio = FechaInicio;
                 _Marcasceite = MarcaAceite;
@@ -150,7 +149,7 @@ namespace ConsoleApp2
 
             }
         }
-    }
+
 }
 
 
