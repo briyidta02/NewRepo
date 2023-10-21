@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace ConsoleApp2
 {
 
-        public class mantenimiento
+        public class Mantenimiento
         {
             private String _Fechainicio;
                   public String FechaInicio
@@ -132,7 +132,7 @@ namespace ConsoleApp2
                 }
             }
 
-            public mantenimiento (String FechaInicio, string MarcaAceite, string Servicio, double Kilometraje, double ProximoCambio, double Costo, double Lineamiento, string NombreTaller, string NombreMecanico, string Frenos)
+            public Mantenimiento (String FechaInicio, string MarcaAceite, string Servicio, double Kilometraje, double ProximoCambio, double Costo, double Lineamiento, string NombreTaller, string NombreMecanico, string Frenos)
             {
                 _Fechainicio = FechaInicio;
                 _Marcasceite = MarcaAceite;

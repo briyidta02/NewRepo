@@ -9,6 +9,19 @@ namespace ConsoleApp2
 
     public class Vehiculo
     {
+        private TipodeVehiculo _tipodeVehiculo;
+
+        public string Tipodevehiculo
+        {
+            get
+            {
+                return _marca;
+            }
+            set
+            {
+                _marca = value;
+            }
+        }
         private string _marca;
         public string Marca
         {

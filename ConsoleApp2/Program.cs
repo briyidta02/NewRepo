@@ -4,6 +4,8 @@
     {
         static void Main(string[] args)
         {
+            DateTime fechageneral = new DateTime(2023,10,21)
+            
             Console.WriteLine("**INFORMACION VEHICULO**");
             Vehiculo vehiculo = new Vehiculo("BMW", 0, "media", "Rojo", "Deportivo", 2018);
             Console.WriteLine("la marca del carro es:" + vehiculo.Marca);
@@ -35,7 +37,7 @@
             Console.WriteLine("Numero de identificacion:" + conductor.Identificacion);
 
             Console.WriteLine("**INFORMACION MANTENIMIENTO**");
-            mantenimiento Mantenimiento = new mantenimiento("02-06-2022","Formula 1","mantenimiento general",160648,02-12-2022,105.000,0.5,"MECATRONIX","Richar Monsalve","Equilibrados");
+            Mantenimiento Mantenimiento = new Mantenimiento("02-06-2022","Formula 1","mantenimiento general",160648,02-12-2022,105.000,0.5,"MECATRONIX","Richar Monsalve","Equilibrados");
             Console.WriteLine("Fecha de inicio de mantenimiento:" + Mantenimiento.FechaInicio);
             Console.WriteLine("Marca de aceite: " + Mantenimiento.MarcaAceite);
             Console.WriteLine("Servicio de mantenimiento:" + Mantenimiento.Servicio);
