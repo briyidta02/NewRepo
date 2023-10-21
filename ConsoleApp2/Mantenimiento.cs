@@ -10,8 +10,8 @@ namespace ConsoleApp2
 
         public class Mantenimiento
         {
-            private String _Fechainicio;
-                  public String FechaInicio
+            private DateTime _Fechainicio;
+                  public DateTime FechaInicio
             {
                 get
                 {
@@ -132,7 +132,7 @@ namespace ConsoleApp2
                 }
             }
 
-            public Mantenimiento (String FechaInicio, string MarcaAceite, string Servicio, double Kilometraje, double ProximoCambio, double Costo, double Lineamiento, string NombreTaller, string NombreMecanico, string Frenos)
+            public Mantenimiento (DateTime FechaInicio, string MarcaAceite, string Servicio, double Kilometraje, double ProximoCambio, double Costo, double Lineamiento, string NombreTaller, string NombreMecanico, string Frenos)
             {
                 _Fechainicio = FechaInicio;
                 _Marcasceite = MarcaAceite;

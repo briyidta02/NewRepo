@@ -8,8 +8,8 @@ namespace ConsoleApp2
 {
     public class Soat
     {
-        private string _fechafinal;
-        public string FechaFinal
+        private DateTime _fechafinal;
+        public DateTime FechaFinal
         {
             get
             {
@@ -21,8 +21,8 @@ namespace ConsoleApp2
             }
         }
 
-        private String _Fechaproxima;
-        public string FechaProxima
+        private DateTime _Fechaproxima;
+        public DateTime FechaProxima
         {
             get
             {
@@ -46,7 +46,7 @@ namespace ConsoleApp2
             }
         }
     
-        public Soat(int NumeroSoat, String FechaProxima,string FechaFinal)
+        public Soat(int NumeroSoat, DateTime FechaProxima,DateTime FechaFinal)
         {
             _Numerosoat = NumeroSoat;
             _Fechaproxima = FechaProxima;

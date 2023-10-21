@@ -4,7 +4,7 @@
     {
         static void Main(string[] args)
         {
-            DateTime fechageneral = new DateTime(2023,10,21)
+            DateTime fechageneral = new DateTime(2023, 10, 21);
             
             Console.WriteLine("**INFORMACION VEHICULO**");
             Vehiculo vehiculo = new Vehiculo("BMW", 0, "media", "Rojo", "Deportivo", 2018);
@@ -16,13 +16,13 @@
             Console.WriteLine("el modelo del carro es del ano es: " + vehiculo.Modelo);
 
             Console.WriteLine("**INFORMACION SOAT**");
-            Soat SOAT = new Soat(198876, "09-05-2021", "09-05-2022");
+            Soat SOAT = new Soat(198876, new DateTime(2021, 10, 21), new DateTime(2022, 10, 21));
             Console.WriteLine("El numero de soat es:" + SOAT.NumeroSoat);
             Console.WriteLine("la fecha proxima es:" + SOAT.FechaProxima);
             Console.WriteLine("La fecha final es de: " + SOAT.FechaFinal);
 
             Console.WriteLine("**INFORMACION LICENCIA**");
-            Licencia licencia = new Licencia(3525666, "02-08-2024", "02-08-2021", "Particular", "Antonella Ramirez");
+            Licencia licencia = new Licencia(3525666, new DateTime(2024,08,02), new DateTime(2021, 08, 02), "Particular", "Antonella Ramirez");
             Console.WriteLine("Numero de licencia es:" + licencia.IdentificacionPersona);
             Console.WriteLine("Fehca de vigencia es: " + licencia.FechaVigencia);
             Console.WriteLine("Fecha de expediente: " + licencia.FechaExpediente);
@@ -37,7 +37,7 @@
             Console.WriteLine("Numero de identificacion:" + conductor.Identificacion);
 
             Console.WriteLine("**INFORMACION MANTENIMIENTO**");
-            Mantenimiento Mantenimiento = new Mantenimiento("02-06-2022","Formula 1","mantenimiento general",160648,02-12-2022,105.000,0.5,"MECATRONIX","Richar Monsalve","Equilibrados");
+            Mantenimiento Mantenimiento = new Mantenimiento(new DateTime(2022, 06, 02),"Formula 1","mantenimiento general",160648,02-12-2022,105.000,0.5,"MECATRONIX","Richar Monsalve","Equilibrados");
             Console.WriteLine("Fecha de inicio de mantenimiento:" + Mantenimiento.FechaInicio);
             Console.WriteLine("Marca de aceite: " + Mantenimiento.MarcaAceite);
             Console.WriteLine("Servicio de mantenimiento:" + Mantenimiento.Servicio);

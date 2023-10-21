@@ -21,8 +21,8 @@ namespace ConsoleApp2
                 _Identificacionpersona = value;
             }
         }
-        private String _Fechavigencia;
-        public String FechaVigencia
+        private DateTime _Fechavigencia;
+        public DateTime FechaVigencia
         {
             get
             {
@@ -35,8 +35,8 @@ namespace ConsoleApp2
         }
 
 
-        private String _Fechaexpediente;
-        public String FechaExpediente
+        private DateTime _Fechaexpediente;
+        public DateTime FechaExpediente
         {
             get
             {
@@ -77,7 +77,7 @@ namespace ConsoleApp2
 
         }
 
-        public Licencia(int IdentificacionPersona, String FechaVigencia, String FechaExpediente, string Servicio, string NombreConductor) {
+        public Licencia(int IdentificacionPersona, DateTime FechaVigencia, DateTime FechaExpediente, string Servicio, string NombreConductor) {
 
             _Identificacionpersona = IdentificacionPersona;
             _Fechavigencia = FechaVigencia;
