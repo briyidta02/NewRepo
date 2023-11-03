@@ -8,9 +8,12 @@ namespace ConsoleApp2
 {
     public interface IRegistro
     {
+        VehiculoAutomotor RegistroVehiculo(VehiculoAutomotor vehiculoAutomotor);
 
+        string GenerarFechasMantenimiento(VehiculoAutomotor vehiculoAutomotor);
 
+        string EstablecerFechasMantenimiento(VehiculoAutomotor vehiculoAutomotor);
 
-
+        List<VehiculoAutomotor> Search(string Marca, int alineamiento, string Velocidad, string color, string Tipo, int Modelo); 
     }
 }
