@@ -8,6 +8,7 @@ namespace ConsoleApp2.Data
 {
     public static class ConductorDataManager
     {
+        private const string DATA_FILE = "";
         public static Conductor AddConductor(Conductor conductor)
         {
             return conductor;
