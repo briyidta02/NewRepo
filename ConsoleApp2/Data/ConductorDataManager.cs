@@ -8,9 +8,10 @@ namespace ConsoleApp2.Data
 {
     public static class ConductorDataManager
     {
-        public static void SaveConductor(Conductor conductor);
-        Console.WriteLine(Conductor);
-
+        public static Conductor AddConductor(Conductor conductor)
+        {
+            return conductor;
+        }
     
     }
 }
