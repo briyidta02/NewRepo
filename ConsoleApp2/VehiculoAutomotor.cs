@@ -82,6 +82,8 @@ namespace ConsoleApp2
             }
         }
         private int _Modelo;
+        internal string Id;
+
         public int Modelo
         {
             get
