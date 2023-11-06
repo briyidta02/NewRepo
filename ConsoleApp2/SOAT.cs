@@ -33,22 +33,22 @@ namespace ConsoleApp2
                 _Fechaproxima = value;
             }
         }
-        private int _Numerosoat;
-        public int NumeroSoat
+        private int _Numeroaseguradora;
+        public int NumeroAseguradora
         {
             get
             {
-                return _Numerosoat;
+                return _Numeroaseguradora;
             }
             set
             {
-                _Numerosoat = value;
+              _Numeroaseguradora = value;
             }
         }
     
-        public Soat(int NumeroSoat, DateTime FechaProxima,DateTime FechaFinal)
+        public Soat(int NumeroAseguradora, DateTime FechaProxima, DateTime FechaFinal)
         {
-            _Numerosoat = NumeroSoat;
+            _Numeroaseguradora = NumeroAseguradora;
             _Fechaproxima = FechaProxima;
             _fechafinal = FechaFinal;
         }
