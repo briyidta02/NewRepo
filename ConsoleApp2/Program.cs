@@ -19,7 +19,7 @@ namespace ConsoleApp2
 
             Console.WriteLine("**INFORMACION SOAT**");
             Soat SOAT = new Soat(198876, new DateTime(2021, 10, 21), new DateTime(2022, 10, 21));
-            Console.WriteLine("El numero de soat es:" + SOAT.NumeroSoat);
+            Console.WriteLine("El numero de soat es:" + SOAT.NumeroAseguradora);
             Console.WriteLine("la fecha proxima es:" + SOAT.FechaProxima);
             Console.WriteLine("La fecha final es de: " + SOAT.FechaFinal);
 
