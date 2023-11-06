@@ -8,5 +8,17 @@ namespace ConsoleApp2.Data
 {
     public static class SOATDataManager
     {
+
+        public static Soat AddSOAT(Soat soat)
+        {
+
+
+
+
+        }
+
+
+
+
     }
 }
