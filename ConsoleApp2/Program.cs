@@ -31,6 +31,8 @@ namespace ConsoleApp2
             Console.WriteLine("Servicio:" + licencia.Servicio);
             Console.WriteLine("Nombre de conductor: " + licencia.NombreConductor);
 
+            LicenciaDataManager.AddLicencia(licencia);
+
             Console.WriteLine("**INFORMACION CONDUCTOR**");
             Conductor conductor = new Conductor("Antonella Ramirez", 315 - 202 - 3879, "calle 54 G N 23 - 25", 1019958263);
             Console.WriteLine("Nombre de conductor:" + conductor.Nombre);

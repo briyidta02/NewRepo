@@ -120,7 +120,9 @@ namespace ConsoleApp2
                 }
             }
             private string _Frenos;
-                  public string Frenos
+        internal string Id;
+
+        public string Frenos
             {
                 get
                 {
