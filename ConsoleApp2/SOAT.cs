@@ -34,6 +34,8 @@ namespace ConsoleApp2
             }
         }
         private int _Numeroaseguradora;
+        internal string Id;
+
         public int NumeroAseguradora
         {
             get
