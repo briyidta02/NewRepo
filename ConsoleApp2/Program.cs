@@ -18,9 +18,10 @@ namespace ConsoleApp2
                 Console.WriteLine("5. Informacion mantenimiento");
             }
             switch (opcion)
-            {             
-            case 1;
+            {
+                case 1:
                     Console.WriteLine("Seleccionaste la opcion 1");
+                    break;
             }
             DateTime fechageneral = new DateTime(2023, 10, 21);
 
