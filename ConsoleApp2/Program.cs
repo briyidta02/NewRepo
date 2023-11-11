@@ -8,14 +8,18 @@ namespace ConsoleApp2
 
         static void Main(string[] args)
         {
+            Console.WriteLine("MENU");
+            Console.WriteLine("1. Informacion del vehiculo");
+            Console.WriteLine("2. Informacion Soat");
+            Console.WriteLine("3. Informacion licencia");
+            Console.WriteLine("4. Informacion conductor");
+            Console.WriteLine("5. Informacion mantenimiento");
+
+
+
             while (true)
             {
-                Console.WriteLine("MENU");
-                Console.WriteLine("1. Informacion del vehiculo");
-                Console.WriteLine("2. Informacion Soat");
-                Console.WriteLine("3. Informacion licencia");
-                Console.WriteLine("4. Informacion conductor");
-                Console.WriteLine("5. Informacion mantenimiento");
+                
             }
             switch (opcion)
             {
@@ -23,6 +27,8 @@ namespace ConsoleApp2
                     Console.WriteLine("Seleccionaste la opcion 1");
                     break;
             }
+
+
             DateTime fechageneral = new DateTime(2023, 10, 21);
 
             Console.WriteLine("**INFORMACION VEHICULO**");
@@ -34,7 +40,7 @@ namespace ConsoleApp2
             Console.WriteLine("El tipo de carro es:" + vehiculoautomotor.Tipo);
             Console.WriteLine("el modelo del carro es del ano es: " + vehiculoautomotor.Modelo);
 
-            VehiculoAutomotor.AddVehiculoAutomotor(vehiculoautomotor);
+            VehiculoAutomotorDataManager.AddVehiculoAutomotor(vehiculoautomotor);
 
             Console.WriteLine("**INFORMACION SOAT**");
             Soat SOAT = new Soat(198876, new DateTime(2021, 10, 21), new DateTime(2022, 10, 21));
@@ -77,6 +83,18 @@ namespace ConsoleApp2
             Console.WriteLine(" Estado de frenos" + Mantenimiento.Frenos);
 
             MantenimientoDataManager.AddMantenimiento(Mantenimiento);
+
+        }
+
+        public static void MENUPRINCIPAL()
+        {
+            Console.WriteLine("MENÚ");
+            Console.WriteLine("1. Informacion del vehiculo");
+            Console.WriteLine("2. Informacion Soat");
+            Console.WriteLine("3. Informacion licencia");
+            Console.WriteLine("4. Informacion conductor");
+            Console.WriteLine("5. Informacion mantenimiento");
+
 
         }
     }

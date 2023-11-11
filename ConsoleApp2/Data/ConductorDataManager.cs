@@ -10,6 +10,12 @@ namespace ConsoleApp2.Data
 {
     public static class ConductorDataManager
     {
+        public static void SaveConductor(Conductor conductor)
+        {
+            Console.WriteLine(conductor);
+        }
+
+
         private const string DATA_FILE = "C:\\Users\\Tatiana\\Source\\Repos\\briyidta02\\NewRepo\\ConsoleApp2\\Data\\Conductor.json";
         public static Conductor AddConductor(Conductor conductor)
         {
