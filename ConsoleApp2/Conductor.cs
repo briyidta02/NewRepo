@@ -47,6 +47,7 @@ namespace ConsoleApp2
 
 
         private int _identificacion;
+        internal string Id;
 
         public int Identificacion
         {

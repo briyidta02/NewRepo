@@ -8,39 +8,39 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp2.Data
 {
-    public static class ConductorDataManager
+    public static class  VehiculoAutomotorDataManager
     {
-        private const string DATA_FILE = "C:\\Users\\Tatiana\\Source\\Repos\\briyidta02\\NewRepo\\ConsoleApp2\\Data\\Conductor.json";
-        public static Conductor AddConductor(Conductor conductor)
+        private const string DATA_FILE = "C:\\Users\\Tatiana\\Source\\Repos\\briyidta02\\NewRepo\\ConsoleApp2\\Data\\VehiculoAutomotor";
+        public static VehiculoAutomotor AddVehiculoAutomotor(VehiculoAutomotor vehiculoautomotor)
         {
             try
             {
-                string currentConductorState = GetFileInfo();
-                var jObject = JObject.Parse(currentConductorState);
-                conductor.Id = $"{jObject.Properties().Count() +1}";
-                string ConductorJson = JsonConvert.SerializeObject(conductor);
-                jObject.Add(conductor.Id, ConductorJson);
-                
+                string currentVehiculoAutomotorState = GetFileInfo();
+                var jObject = JObject.Parse(currentVehiculoAutomotorState);
+                vehiculoautomotor.Id = $"{jObject.Properties().Count () + 1}";
+                string VehiculoAutomotorJson = JsonConvert.SerializeObject(vehiculoautomotor);
+                jObject.Add(vehiculoautomotor.Id, VehiculoAutomotorJson);
+
                 string outoutJson = JsonConvert.SerializeObject(jObject, Formatting.Indented);
                 WriteFileInfo(outoutJson);
             }
             catch (Exception ex) 
             {
+
                 Console.ForegroundColor = ConsoleColor.Red;
                 Console.WriteLine(ex.Message);
                 Console.ForegroundColor = ConsoleColor.Green;
-            
-            
+
             }
 
-            return conductor;
+
+            return vehiculoautomotor;
         }
         private static string GetFileInfo()
         {
-
             return File.ReadAllText(DATA_FILE);
         }
-        private static void WriteFileInfo(string json)
+        private static void WriteFileInfo (string json)
         {
             File.WriteAllText(DATA_FILE, json);
         }

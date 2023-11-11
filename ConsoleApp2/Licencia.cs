@@ -63,7 +63,8 @@ namespace ConsoleApp2
         }
 
         private string _Nombreconductor;
-         
+        internal string Id;
+
         public string NombreConductor
         {
             get
