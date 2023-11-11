@@ -36,7 +36,6 @@ namespace ConsoleApp2
         }
     }
     
-        public Vehiculo(string MarcaAceite, string Servicio, double Kilometraje, double ProximoCambio, double Costo, double Lineamiento, string NombreTaller, string NombreMecanico, string Frenos);
-    base(MarcaAceite,
+       
 }
 
