@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp2
 {
-    public interface ICambio1
+    public interface ICambio
     {
         Mantenimiento RegistrarCambios(Mantenimiento vehiculoAutomotor);
 
