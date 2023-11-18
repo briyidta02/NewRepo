@@ -10,7 +10,7 @@ namespace ConsoleApp2
         {
             MENUPRINCIPAL();
 
-            /*
+            
             DateTime fechageneral = new DateTime(2023, 10, 21);
 
             Console.WriteLine("**INFORMACION VEHICULO**");
@@ -65,7 +65,7 @@ namespace ConsoleApp2
             Console.WriteLine(" Estado de frenos" + Mantenimiento.Frenos);
 
             MantenimientoDataManager.AddMantenimiento(Mantenimiento);
-            */
+            
 
         }
 

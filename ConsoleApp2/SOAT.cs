@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp2
 {
-    public class Soat
+    public class Soat : ISoat
     {
         private DateTime _fechafinal;
         public DateTime FechaFinal
@@ -53,6 +53,32 @@ namespace ConsoleApp2
             _Numeroaseguradora = NumeroAseguradora;
             _Fechaproxima = FechaProxima;
             _fechafinal = FechaFinal;
+        }
+
+        public Soat Notificacionsoat(Soat soat)
+        {
+            DateTime now = DateTime.Now;
+
+            DateTime startDate = new DateTime(2021, 10, 21);
+
+            DateTime endDate = new DateTime(2023, 10, 21);
+
+            TimeSpan timeRemaining = endDate - now;
+
+            int daysThreshold = 7;
+
+            if (timeRemaining.TotalDays <= daysThreshold)
+            {
+                Console.WriteLine($"¡Atención! El SOAT está próximo a vencer en {timeRemaining.TotalDays} días.");
+            }
+            else
+            {
+                Console.WriteLine("El SOAT todavía está vigente.");
+            }
+        }
+        public List<Soat> Search(DateTime FechaProxima, DateTime FechaFinal)
+        {
+            throw new NotImplementedException();
         }
     }
 }
