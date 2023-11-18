@@ -12,7 +12,7 @@ namespace ConsoleApp2
 
         string TiposdeCambios (Mantenimiento vehiculoAutomotor);
 
-        List<Mantenimiento> Search(string MarcaAceite, string Servicio, double Kilometraje, double Costo, double Lineamiento, string NombreTaller, string NombreMecanico, string Frenos);
+        List<Mantenimiento> Search(string MarcaAceite,string CantidadAceite, string Servicio, double Kilometraje, double Costo, double Lineamiento, string NombreTaller, string NombreMecanico, string Frenos);
     }
 }
 

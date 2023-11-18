@@ -133,11 +133,25 @@ namespace ConsoleApp2
                     _Frenos = value;
                 }
             }
-
-            public Mantenimiento (DateTime FechaInicio, string MarcaAceite, string Servicio, double Kilometraje, double ProximoCambio, double Costo, double Lineamiento, string NombreTaller, string NombreMecanico, string Frenos)
+        private string _Cantidadaceite;
+        public string CantidadAceite
+        {
+            get
             {
+                return _Cantidadaceite; 
+            }
+            set
+            {
+                _Cantidadaceite= value;
+            }
+        }
+     
+            public Mantenimiento (DateTime FechaInicio, string MarcaAceite, string CantidadAceite, string Servicio, double Kilometraje, double ProximoCambio, double Costo, double Lineamiento, string NombreTaller, string NombreMecanico, string Frenos)
+            {
+                
                 _Fechainicio = FechaInicio;
                 _Marcasceite = MarcaAceite;
+               _Cantidadaceite= CantidadAceite;
                 _Servicio = Servicio;
                 _Kilometraje = Kilometraje;
                 _Proximocambio = ProximoCambio;
