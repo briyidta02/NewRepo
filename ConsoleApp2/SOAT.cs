@@ -75,12 +75,20 @@ namespace ConsoleApp2
             {
                 Console.WriteLine("El SOAT todavía está vigente.");
             }
+
+            throw new NotImplementedException();
         }
+
+        public string FechaProximavencer(Soat soat)
+        {
+          
+            throw new NotImplementedException();
+        }
+
         public List<Soat> Search(DateTime FechaProxima, DateTime FechaFinal)
         {
             throw new NotImplementedException();
         }
     }
-}
 
 

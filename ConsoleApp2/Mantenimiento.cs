@@ -8,8 +8,7 @@ using System.Threading.Tasks;
 namespace ConsoleApp2
 {
 
-        public class Mantenimiento
-        {
+        public class Mantenimiento: Itecnomecanica        {
             private DateTime _Fechainicio;
                   public DateTime FechaInicio
             {
@@ -145,8 +144,21 @@ namespace ConsoleApp2
                 _Cantidadaceite= value;
             }
         }
-     
-            public Mantenimiento (DateTime FechaInicio, string MarcaAceite, string CantidadAceite, string Servicio, double Kilometraje, double ProximoCambio, double Costo, double Lineamiento, string NombreTaller, string NombreMecanico, string Frenos)
+        private DateTime _Fechafinal;
+        public DateTime FechaFinal
+        {
+            get
+            {
+                return _Fechafinal;
+            }
+            set
+            {
+                _Fechafinal = value;
+            }
+        }
+
+
+        public Mantenimiento (DateTime FechaInicio, string MarcaAceite, string CantidadAceite, string Servicio, double Kilometraje, double ProximoCambio, double Costo, double Lineamiento, string NombreTaller, string NombreMecanico, string Frenos, DateTime FechaFinal)
             {
                 
                 _Fechainicio = FechaInicio;
@@ -160,11 +172,42 @@ namespace ConsoleApp2
                 _Nombretaller = NombreTaller;
                 _Nombremecanico = NombreMecanico;
                 _Frenos = Frenos;
+                _Fechafinal = FechaFinal;
 
 
 
             }
+
+        public Mantenimiento NotificacionRenovacion(Mantenimiento mantenimiento)
+        {
+            DateTime now = DateTime.Now;
+
+            DateTime startDate = new DateTime(2022, 06, 02);
+
+            DateTime endDate = new DateTime(2023, 06, 02);
+
+            TimeSpan timeRemaining = endDate - now;
+
+            int daysThreshold = 5;
+
+            if (timeRemaining.TotalDays <= daysThreshold)
+            {
+                Console.WriteLine($"¡Atención! LA TECNOMECANICA  está próximo a vencer en {timeRemaining.TotalDays} días.");
+            }
+            else
+            {
+                Console.WriteLine("LA TECNOMECNICA todavía está vigente.");
+            }
+
+
+            throw new NotImplementedException();
         }
+
+        public List<Mantenimiento> Search(DateTime FechaInicio, DateTime FechaFinal)
+        {
+            throw new NotImplementedException();
+        }
+    }
 
 }
 

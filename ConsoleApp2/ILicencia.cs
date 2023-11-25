@@ -8,7 +8,10 @@ namespace ConsoleApp2
 {
     public interface ILicencia
     {
-        Licencia Renovacion(Licencia);
+        Licencia Renovacion (Licencia licencia);
+
+        List<Licencia> Search(DateTime FechaVigencia, DateTime FechaExpediente);
+
 
     }
 }

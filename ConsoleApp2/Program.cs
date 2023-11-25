@@ -52,7 +52,7 @@ namespace ConsoleApp2
             ConductorDataManager.AddConductor(conductor);
 
             Console.WriteLine("**INFORMACION MANTENIMIENTO**");
-            Mantenimiento Mantenimiento = new Mantenimiento(new DateTime(2022, 06, 02), "Formula 1", "mantenimiento general", 160648, 02 - 12 - 2022, 105.000, 0.5, "MECATRONIX", "Richar Monsalve", "Equilibrados");
+            Mantenimiento Mantenimiento = new Mantenimiento(new DateTime(2022, 06, 02), "Formula 1", "mantenimiento general", 160648, 02 - 12 - 2022, 105.000, 0.5, "MECATRONIX", "Richar Monsalve", "Equilibrados",new DateTime (2023, 06, 02));
             Console.WriteLine("Fecha de inicio de mantenimiento:" + Mantenimiento.FechaInicio);
             Console.WriteLine("Marca de aceite: " + Mantenimiento.MarcaAceite);
             Console.WriteLine("Servicio de mantenimiento:" + Mantenimiento.Servicio);
@@ -63,6 +63,7 @@ namespace ConsoleApp2
             Console.WriteLine("Nombre de taller: " + Mantenimiento.NombreTaller);
             Console.WriteLine("Nombre de mecanico:" + Mantenimiento.NombreMecanico);
             Console.WriteLine(" Estado de frenos" + Mantenimiento.Frenos);
+            Console.WriteLine("Fecha de final de mantenimiento:" + Mantenimiento.FechaFinal);
 
             MantenimientoDataManager.AddMantenimiento(Mantenimiento);
             
