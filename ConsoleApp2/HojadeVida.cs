@@ -8,17 +8,13 @@ namespace ConsoleApp2
 {
     internal class HojadeVida
     {
-       
+
         public class Hojadevida
         {
             private string mantenimiento { get; set; }
 
         }
         private static int opcion;
-        static void Main(string[] args)
-        {
-            MostrarMenu();
-        }
 
         public static void MostrarMenu()
         {
@@ -48,29 +44,29 @@ namespace ConsoleApp2
 
             }
         }
-                public static void RegistrarRevision()
-                {
-                    Console.Write("Ingrese la descripción de la revisión: ");
-                    string descripcion = Console.ReadLine();
+        public static void RegistrarRevision()
+        {
+            Console.Write("Ingrese la descripción de la revisión: ");
+            string descripcion = Console.ReadLine();
 
-                    Console.Write("Ingrese la fecha de la revisión (YYYY-MM-DD): ");
-                    DateTime fecha = DateTime.Parse(Console.ReadLine());
+            Console.Write("Ingrese la fecha de la revisión (YYYY-MM-DD): ");
+            DateTime fecha = DateTime.Parse(Console.ReadLine());
 
-                    Revision nuevaRevision = new Revision(descripcion, fecha);
-                    revisiones.Add(nuevaRevision);
+            Revision nuevaRevision = new Revision(descripcion, fecha);
+            revisiones.Add(nuevaRevision);
 
-                    Console.WriteLine("Revisión registrada con éxito.");
-                }
-
-                public static void MostrarRevisionesProgramadas()
-                {
-                    Console.WriteLine("Revisiones programadas:");
-                    foreach (var revision in revisiones)
-                    {
-                        Console.WriteLine($"{revision.Descripcion} - {revision.Fecha}");
-                    }
-                }
-            }
+            Console.WriteLine("Revisión registrada con éxito.");
         }
 
-    } }
+        public static void MostrarRevisionesProgramadas()
+        {
+            Console.WriteLine("Revisiones programadas:");
+            foreach (var revision in revisiones)
+            {
+                Console.WriteLine($"{revision.Descripcion} - {revision.Fecha}");
+            }
+        }
+    }
+}    
+
+    
