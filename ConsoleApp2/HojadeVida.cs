@@ -14,8 +14,7 @@ namespace ConsoleApp2
             private string mantenimiento { get; set; }
 
         }
-        private static int opcion;
-
+       
         public static void MostrarMenu()
         {
 
@@ -67,6 +66,8 @@ namespace ConsoleApp2
             }
         }
     }
+
+   
 }    
 
     
