@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleApp2.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -52,7 +53,7 @@ namespace ConsoleApp2
             DateTime fecha = DateTime.Parse(Console.ReadLine());
 
             Revision nuevaRevision = new Revision(descripcion, fecha);
-            revisiones.Add(nuevaRevision);
+            RevisionDataManager.AddRevision(nuevaRevision);
 
             Console.WriteLine("Revisión registrada con éxito.");
         }
@@ -60,7 +61,7 @@ namespace ConsoleApp2
         public static void MostrarRevisionesProgramadas()
         {
             Console.WriteLine("Revisiones programadas:");
-            foreach (var revision in revisiones)
+            foreach (var revision in revisi)
             {
                 Console.WriteLine($"{revision.Descripcion} - {revision.Fecha}");
             }

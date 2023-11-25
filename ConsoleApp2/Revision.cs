@@ -28,7 +28,9 @@
                 _Fecharevision = value;
             }
         }
-        
+
+        public string Id { get; internal set; }
+
         public Revision (string DescripcionVehiculo, DateTime FechaRevision)
         {
             _Descripcionvehiculo = DescripcionVehiculo;

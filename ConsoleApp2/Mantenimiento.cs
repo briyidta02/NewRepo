@@ -156,9 +156,9 @@ namespace ConsoleApp2
                 _Fechafinal = value;
             }
         }
-
-
-        public Mantenimiento (DateTime FechaInicio, string MarcaAceite, string CantidadAceite, string Servicio, double Kilometraje, double ProximoCambio, double Costo, double Lineamiento, string NombreTaller, string NombreMecanico, string Frenos, DateTime FechaFinal)
+ 
+        public Mantenimiento (DateTime FechaInicio, string MarcaAceite, string CantidadAceite, string Servicio, double Kilometraje, 
+            double ProximoCambio, double Costo, double Lineamiento, string NombreTaller, string NombreMecanico, string Frenos, DateTime FechaFinal)
             {
                 
                 _Fechainicio = FechaInicio;

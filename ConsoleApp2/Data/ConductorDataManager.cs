@@ -19,7 +19,7 @@ namespace ConsoleApp2.Data
         private const string DATA_FILE = "C:\\Users\\Tatiana\\Source\\Repos\\briyidta02\\NewRepo\\ConsoleApp2\\Data\\Conductor.json";
         public static Conductor AddConductor(Conductor conductor)
         {
-            try
+            try                                           
             {
                 string currentConductorState = GetFileInfo();
                 var jObject = JObject.Parse(currentConductorState);
