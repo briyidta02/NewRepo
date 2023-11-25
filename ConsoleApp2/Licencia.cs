@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp2
 {
-    public class Licencia
+    public class Licencia: ILicencia
     {
 
         private int _Identificacionpersona;
@@ -86,6 +86,35 @@ namespace ConsoleApp2
             _Servicio = Servicio;
             _Nombreconductor = NombreConductor;
 
+        }
+
+        public Licencia Renovacion(Licencia licencia)
+        {
+            DateTime now = DateTime.Now;
+
+            DateTime startDate = new DateTime(2021, 08, 02);
+
+            DateTime endDate = new DateTime(2024, 08, 02);
+
+            TimeSpan timeRemaining = endDate - now;
+
+            int daysThreshold = 5;
+
+            if (timeRemaining.TotalDays <= daysThreshold)
+            {
+                Console.WriteLine($"¡Atención! LA LICENCIA   está próximo a vencer en {timeRemaining.TotalDays} días.");
+            }
+            else
+            {
+                Console.WriteLine("LA LICENCIA todavía está vigente.");
+            }
+
+            throw new NotImplementedException();
+        }
+
+        public List<Licencia> Search(DateTime FechaVigencia, DateTime FechaExpediente)
+        {
+            throw new NotImplementedException();
         }
     }
 }
