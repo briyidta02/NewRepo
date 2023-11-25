@@ -8,7 +8,7 @@ namespace ConsoleApp2
 {
     public interface ILicencia
     {
-        Licencia  Renovacion( Licencia ) 
+        Licencia Renovacion(Licencia);
 
     }
 }
