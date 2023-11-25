@@ -14,17 +14,27 @@
               _Descripcionvehiculo = value;
             }
         }
-        private string _Registrorevision;
-        public string RegistroRevision
+        
+        
+        private DateTime _Fecharevision;
+        public DateTime FechaRevision
         {
             get
             {
-                return _Registrorevision;
+                return _Fecharevision;
             }
             set
             {
-                _Registrorevision  = value;
+                _Fecharevision = value;
             }
+        }
+        public Revision (string DescripcionVehiculo, DateTime FechaRevision)
+        {
+            _Descripcionvehiculo = DescripcionVehiculo;
+            _Fecharevision = FechaRevision;
+
+
+
         }
     }
 }
