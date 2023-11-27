@@ -184,7 +184,7 @@ namespace ConsoleApp2
 
             Console.WriteLine("MENÚ");
             Console.WriteLine("1. RegistrarRevision");
-            Console.WriteLine("2. MostrarRevisiones Programadas");
+            Console.WriteLine("2. Notificacion Aceite ");
             Console.WriteLine("3. EMPEZAR DE NUEVO");
 
             while (true)
@@ -200,7 +200,7 @@ namespace ConsoleApp2
                     case "2":
                         NotificacionAceite();
                         break;
-                    case "4":
+                    case "3":
                         return;
 
                 }
