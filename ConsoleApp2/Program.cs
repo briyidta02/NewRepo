@@ -13,6 +13,7 @@ namespace ConsoleApp2
             
             DateTime fechageneral = new DateTime(2023, 10, 21);
 
+            /*
             Console.WriteLine("**INFORMACION VEHICULO**");
             VehiculoAutomotor vehiculoautomotor = new VehiculoAutomotor("BMW", 0, "media", "Rojo", "Deportivo", 2018);
             Console.WriteLine("la marca del carro es:" + vehiculoautomotor.Marca);
@@ -66,7 +67,7 @@ namespace ConsoleApp2
             Console.WriteLine("Fecha de final de mantenimiento:" + Mantenimiento.FechaFinal);
 
             MantenimientoDataManager.AddMantenimiento(Mantenimiento);
-            
+            */
 
         }
 
@@ -157,7 +158,7 @@ namespace ConsoleApp2
         {
 
             Console.WriteLine("*INFORMACION MANTENIMIENTO*");
-            Mantenimiento Mantenimiento = new Mantenimiento(new DateTime(2022, 06, 02), "Formula 1","2 LITROS", "mantenimiento general", 160648, 02 - 12 - 2022, 105.000, 0.5, "MECATRONIX", "Richar Monsalve", "Equilibrados");
+            Mantenimiento Mantenimiento = new Mantenimiento(new DateTime(2022, 06, 02), "Formula 1","2 LITROS", "mantenimiento general", 160648, 02 - 12 - 2022, 105.000, 0.5, "MECATRONIX", "Richar Monsalve", "Equilibrados", new DateTime(2022, 06, 02));
             Console.WriteLine("Fecha de inicio de mantenimiento:" + Mantenimiento.FechaInicio);
             Console.WriteLine("Marca de aceite: " + Mantenimiento.MarcaAceite);
             Console.WriteLine("Servicio de mantenimiento:" + Mantenimiento.Servicio);
