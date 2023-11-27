@@ -8,140 +8,141 @@ using System.Threading.Tasks;
 namespace ConsoleApp2
 {
 
-        public class Mantenimiento: Itecnomecanica        {
-            private DateTime _Fechainicio;
-                  public DateTime FechaInicio
+    public class Mantenimiento : Itecnomecanica
+    {
+        private DateTime _Fechainicio;
+        public DateTime FechaInicio
+        {
+            get
             {
-                get
-                {
-                    return _Fechainicio;
-                }
-                set
-                {
-                    _Fechainicio = value;
-                }
+                return _Fechainicio;
             }
+            set
+            {
+                _Fechainicio = value;
+            }
+        }
 
-            private string _Marcasceite;
-                  public string MarcaAceite
+        private string _Marcasceite;
+        public string MarcaAceite
+        {
+            get
             {
-                get
-                {
-                    return _Marcasceite;
-                }
-                set
-                {
-                    _Marcasceite = value;
-                }
+                return _Marcasceite;
             }
-            private string _Servicio { get; set; }
-            public string Servicio
+            set
             {
-                get
-                {
-                    return _Servicio;
-                }
-                set
-                {
-                    _Servicio = value;
-                }
+                _Marcasceite = value;
             }
-            private double _Kilometraje;
-                  public double Kilometraje
+        }
+        private string _Servicio { get; set; }
+        public string Servicio
+        {
+            get
             {
-                get
-                {
-                    return _Kilometraje;
-                }
-                set
-                {
-                    _Kilometraje = value;
-                }
+                return _Servicio;
             }
-            private double _Proximocambio;
-                  public double ProximoCambio
+            set
             {
-                get
-                {
-                    return _Proximocambio;
-                }
-                set
-                {
-                    _Proximocambio = value;
-                }
+                _Servicio = value;
             }
-            private double _Costo;
-                  public double Costo
+        }
+        private double _Kilometraje;
+        public double Kilometraje
+        {
+            get
             {
-                get
-                {
-                    return _Costo;
-                }
-                set
-                {
-                    _Costo = value;
-                }
+                return _Kilometraje;
             }
-            private double _Lineamientos;
-                  public double Lineamiento
+            set
             {
-                get
-                {
-                    return _Lineamientos;
-                }
-                set
-                {
-                    _Lineamientos = value;
-                }
+                _Kilometraje = value;
             }
-            private string _Nombretaller;
-                  public string NombreTaller
+        }
+        private double _Proximocambio;
+        public double ProximoCambio
+        {
+            get
             {
-                get
-                {
-                    return _Nombretaller;
-                }
-                set
-                {
-                    _Nombretaller = value;
-                }
+                return _Proximocambio;
             }
-            private string _Nombremecanico;
-                  public string NombreMecanico
+            set
             {
-                get
-                {
-                    return _Nombremecanico;
-                }
-                set
-                {
-                    _Nombremecanico = value;
-                }
+                _Proximocambio = value;
             }
-            private string _Frenos;
+        }
+        private double _Costo;
+        public double Costo
+        {
+            get
+            {
+                return _Costo;
+            }
+            set
+            {
+                _Costo = value;
+            }
+        }
+        private double _Lineamientos;
+        public double Lineamiento
+        {
+            get
+            {
+                return _Lineamientos;
+            }
+            set
+            {
+                _Lineamientos = value;
+            }
+        }
+        private string _Nombretaller;
+        public string NombreTaller
+        {
+            get
+            {
+                return _Nombretaller;
+            }
+            set
+            {
+                _Nombretaller = value;
+            }
+        }
+        private string _Nombremecanico;
+        public string NombreMecanico
+        {
+            get
+            {
+                return _Nombremecanico;
+            }
+            set
+            {
+                _Nombremecanico = value;
+            }
+        }
+        private string _Frenos;
         internal string Id;
 
         public string Frenos
+        {
+            get
             {
-                get
-                {
-                    return _Frenos;
-                }
-                set
-                {
-                    _Frenos = value;
-                }
+                return _Frenos;
             }
+            set
+            {
+                _Frenos = value;
+            }
+        }
         private string _Cantidadaceite;
         public string CantidadAceite
         {
             get
             {
-                return _Cantidadaceite; 
+                return _Cantidadaceite;
             }
             set
             {
-                _Cantidadaceite= value;
+                _Cantidadaceite = value;
             }
         }
         private DateTime _Fechafinal;
@@ -156,56 +157,105 @@ namespace ConsoleApp2
                 _Fechafinal = value;
             }
         }
- 
-        public Mantenimiento (DateTime FechaInicio, string MarcaAceite, string CantidadAceite, string Servicio, double Kilometraje, 
+
+        public Mantenimiento(DateTime FechaInicio, string MarcaAceite, string CantidadAceite, string Servicio, double Kilometraje,
             double ProximoCambio, double Costo, double Lineamiento, string NombreTaller, string NombreMecanico, string Frenos, DateTime FechaFinal)
-            {
-                
-                _Fechainicio = FechaInicio;
-                _Marcasceite = MarcaAceite;
-               _Cantidadaceite= CantidadAceite;
-                _Servicio = Servicio;
-                _Kilometraje = Kilometraje;
-                _Proximocambio = ProximoCambio;
-                _Costo = Costo;
-                _Lineamientos = Lineamiento;
-                _Nombretaller = NombreTaller;
-                _Nombremecanico = NombreMecanico;
-                _Frenos = Frenos;
-                _Fechafinal = FechaFinal;
-
-
-
-            }
-
-        public Mantenimiento NotificacionRenovacion(Mantenimiento mantenimiento)
         {
-            DateTime now = DateTime.Now;
 
-            DateTime startDate = new DateTime(2022, 06, 02);
-
-            DateTime endDate = new DateTime(2023, 06, 02);
-
-            TimeSpan timeRemaining = endDate - now;
-
-            int daysThreshold = 5;
-
-            if (timeRemaining.TotalDays <= daysThreshold)
-            {
-                Console.WriteLine($"¡Atención! LA TECNOMECANICA  está próximo a vencer en {timeRemaining.TotalDays} días.");
-            }
-            else
-            {
-                Console.WriteLine("LA TECNOMECNICA todavía está vigente.");
-            }
+            _Fechainicio = FechaInicio;
+            _Marcasceite = MarcaAceite;
+            _Cantidadaceite = CantidadAceite;
+            _Servicio = Servicio;
+            _Kilometraje = Kilometraje;
+            _Proximocambio = ProximoCambio;
+            _Costo = Costo;
+            _Lineamientos = Lineamiento;
+            _Nombretaller = NombreTaller;
+            _Nombremecanico = NombreMecanico;
+            _Frenos = Frenos;
+            _Fechafinal = FechaFinal;
 
 
-            throw new NotImplementedException();
+
         }
 
+        public static void MostrarMenu()
+        {
+
+            Console.WriteLine("MENÚ");
+            Console.WriteLine("1. RegistrarRevision");
+            Console.WriteLine("2. MostrarRevisiones Programadas");
+            Console.WriteLine("3. EMPEZAR DE NUEVO");
+
+            while (true)
+            {
+                MostrarMenu();
+                string opcion = Console.ReadLine();
+
+                switch (opcion)
+                {
+                    case "1":
+                        NotificacionRenovacion();
+                        break;
+                    case "2":
+                        NotificacionAceite();
+                        break;
+                    case "4":
+                        return;
+
+                }
+
+            }
+        }
+        public static void NotificacionRenovacion()
+        {
+           Mantenimiento NotificacionRenovacion(Mantenimiento mantenimiento)
+            {
+                DateTime now = DateTime.Now;
+
+                DateTime startDate = new DateTime(2022, 06, 02);
+
+                DateTime endDate = new DateTime(2023, 06, 02);
+
+                TimeSpan timeRemaining = endDate - now;
+
+                int daysThreshold = 5;
+
+                if (timeRemaining.TotalDays <= daysThreshold)
+                {
+                    Console.WriteLine($"¡Atención! LA TECNOMECANICA  está próximo a vencer en {timeRemaining.TotalDays} días.");
+                }
+                else
+                {
+                    Console.WriteLine("LA TECNOMECNICA todavía está vigente.");
+                }
+
+
+                throw new NotImplementedException();
+            }
+
+        }
         public List<Mantenimiento> Search(DateTime FechaInicio, DateTime FechaFinal)
         {
             throw new NotImplementedException();
+        }
+        public static void NotificacionAceite()
+        { 
+            DateTime ultimaFechaCambioAceite = DateTime.Now;
+
+            int DiasRecomendados = 90;
+
+            DateTime FechaCambioAceite = ultimaFechaCambioAceite.AddDays(DiasRecomendados);
+            
+                DateTime fechaActual = DateTime.Now;
+            if (fechaActual >= FechaCambioAceite)
+            {
+                Console.WriteLine("Se necesita cambio de aceite en el vehículo");
+            }
+            else
+            {
+                Console.WriteLine("No es necesario cambiar el aceite en este momento.");
+            }
         }
     }
 
