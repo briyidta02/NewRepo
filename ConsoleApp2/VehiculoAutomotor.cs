@@ -95,8 +95,21 @@ namespace ConsoleApp2
                 _Modelo = value;
             }
         }
+        private int _ConsumoGasolina;
+       
+        public int ConsumoGasolina
+        {
+            get
+            {
+                return _ConsumoGasolina;
+            }
+            set
+            {
+                _ConsumoGasolina = value;
+            }
+        }
 
-        public VehiculoAutomotor(string Marca, int alineamiento, string Velocidad, string color, string Tipo, int Modelo)
+        public VehiculoAutomotor(string Marca, int alineamiento, string Velocidad, string color, string Tipo, int Modelo, int ConsumoGasolina)
         {
             _marca = Marca;
             _alineamiento = alineamiento;
@@ -104,6 +117,7 @@ namespace ConsoleApp2
             _Color = color;
             _Tipo = Tipo;
             _Modelo = Modelo;
+            _ConsumoGasolina = ConsumoGasolina;
 
         }
     }
