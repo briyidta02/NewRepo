@@ -15,14 +15,14 @@ namespace ConsoleApp2
 
       
             Console.WriteLine("**INFORMACION VEHICULO**");
-            VehiculoAutomotor vehiculoautomotor = new VehiculoAutomotor("BMW", 0, "media", "Rojo", "Deportivo", 2018,118);
+            VehiculoAutomotor vehiculoautomotor = new VehiculoAutomotor("BMW", 0, "media", "Rojo", "Deportivo", 2018);
             Console.WriteLine("la marca del carro es:" + vehiculoautomotor.Marca);
             Console.WriteLine("Su alineacion es :" + vehiculoautomotor.alineamiento);
             Console.WriteLine("Su nivel de velozidad es: " + vehiculoautomotor.Velocidad);
             Console.WriteLine("el color es: " + vehiculoautomotor.color);
             Console.WriteLine("El tipo de carro es:" + vehiculoautomotor.Tipo);
             Console.WriteLine("el modelo del carro es del ano es: " + vehiculoautomotor.Modelo);
-            Console.WriteLine("El recorridos del carro son : " + vehiculoautomotor.Recorridos + "Km");
+          
 
             VehiculoAutomotorDataManager.AddVehiculoAutomotor(vehiculoautomotor);
 
@@ -54,7 +54,7 @@ namespace ConsoleApp2
             ConductorDataManager.AddConductor(conductor);
 
             Console.WriteLine("**INFORMACION MANTENIMIENTO**");
-            Mantenimiento Mantenimiento = new Mantenimiento(new DateTime(2022, 06, 02), "Formula 1", "mantenimiento general", 160648, 02 - 12 - 2022, 105.000, 0.5, "MECATRONIX", "Richar Monsalve", "Equilibrados",new DateTime (2023, 06, 02));
+            Mantenimiento Mantenimiento = new Mantenimiento(new DateTime(2022, 06, 02), "Formula 1", "mantenimiento general", 160648, 02 - 12 - 2022, 105.000, 0.5, "MECATRONIX", "Richar Monsalve", "Equilibrados", new DateTime (2023, 06, 02)); 
             Console.WriteLine("Fecha de inicio de mantenimiento:" + Mantenimiento.FechaInicio);
             Console.WriteLine("Marca de aceite: " + Mantenimiento.MarcaAceite);
             Console.WriteLine("Servicio de mantenimiento:" + Mantenimiento.Servicio);
@@ -119,14 +119,14 @@ namespace ConsoleApp2
         public static void INFORMACIONVEHICULO()
         {
             Console.WriteLine("*INFORMACION VEHICULO*");
-            VehiculoAutomotor vehiculoautomotor = new VehiculoAutomotor("BMW", 0, "media", "Rojo", "Deportivo", 2018,118);
+            VehiculoAutomotor vehiculoautomotor = new VehiculoAutomotor("BMW", 0, "media", "Rojo", "Deportivo", 2018);
             Console.WriteLine("la marca del carro es:" + vehiculoautomotor.Marca);
             Console.WriteLine("Su alineacion es :" + vehiculoautomotor.alineamiento);
             Console.WriteLine("Su nivel de velozidad es: " + vehiculoautomotor.Velocidad);
             Console.WriteLine("el color es: " + vehiculoautomotor.color);
             Console.WriteLine("El tipo de carro es:" + vehiculoautomotor.Tipo);
             Console.WriteLine("el modelo del carro es del ano es: " + vehiculoautomotor.Modelo);
-            Console.WriteLine("El recorridos del carro son : " + vehiculoautomotor.Recorridos + "Km");
+
 
         }
         public static void INFORMACIONSOAT()

@@ -97,19 +97,9 @@ namespace ConsoleApp2
         }
         private int _Recorridos;
        
-        public int Recorridos
-        {
-            get
-            {
-                return _Recorridos;
-            }
-            set
-            {
-                _Recorridos = value;
-            }
-        }
+       
 
-        public VehiculoAutomotor(string Marca, int alineamiento, string Velocidad, string color, string Tipo, int Modelo, int Recorridos)
+        public VehiculoAutomotor(string Marca, int alineamiento, string Velocidad, string color, string Tipo, int Modelo)
         {
             _marca = Marca;
             _alineamiento = alineamiento;
@@ -117,7 +107,7 @@ namespace ConsoleApp2
             _Color = color;
             _Tipo = Tipo;
             _Modelo = Modelo;
-            _Recorridos = Recorridos;
+           
 
         }
     }
