@@ -13,15 +13,16 @@ namespace ConsoleApp2
             
             DateTime fechageneral = new DateTime(2023, 10, 21);
 
-            /*
+      
             Console.WriteLine("**INFORMACION VEHICULO**");
-            VehiculoAutomotor vehiculoautomotor = new VehiculoAutomotor("BMW", 0, "media", "Rojo", "Deportivo", 2018);
+            VehiculoAutomotor vehiculoautomotor = new VehiculoAutomotor("BMW", 0, "media", "Rojo", "Deportivo", 2018,118);
             Console.WriteLine("la marca del carro es:" + vehiculoautomotor.Marca);
             Console.WriteLine("Su alineacion es :" + vehiculoautomotor.alineamiento);
             Console.WriteLine("Su nivel de velozidad es: " + vehiculoautomotor.Velocidad);
             Console.WriteLine("el color es: " + vehiculoautomotor.color);
             Console.WriteLine("El tipo de carro es:" + vehiculoautomotor.Tipo);
             Console.WriteLine("el modelo del carro es del ano es: " + vehiculoautomotor.Modelo);
+            Console.WriteLine("El recorridos del carro son : " + vehiculoautomotor.Recorridos + "Km");
 
             VehiculoAutomotorDataManager.AddVehiculoAutomotor(vehiculoautomotor);
 
@@ -118,13 +119,14 @@ namespace ConsoleApp2
         public static void INFORMACIONVEHICULO()
         {
             Console.WriteLine("*INFORMACION VEHICULO*");
-            VehiculoAutomotor vehiculoautomotor = new VehiculoAutomotor("BMW", 0, "media", "Rojo", "Deportivo", 2018);
+            VehiculoAutomotor vehiculoautomotor = new VehiculoAutomotor("BMW", 0, "media", "Rojo", "Deportivo", 2018,118);
             Console.WriteLine("la marca del carro es:" + vehiculoautomotor.Marca);
             Console.WriteLine("Su alineacion es :" + vehiculoautomotor.alineamiento);
             Console.WriteLine("Su nivel de velozidad es: " + vehiculoautomotor.Velocidad);
             Console.WriteLine("el color es: " + vehiculoautomotor.color);
             Console.WriteLine("El tipo de carro es:" + vehiculoautomotor.Tipo);
             Console.WriteLine("el modelo del carro es del ano es: " + vehiculoautomotor.Modelo);
+            Console.WriteLine("El recorridos del carro son : " + vehiculoautomotor.Recorridos + "Km");
 
         }
         public static void INFORMACIONSOAT()
