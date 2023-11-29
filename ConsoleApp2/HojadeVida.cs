@@ -62,11 +62,13 @@ namespace ConsoleApp2
         {
             Console.WriteLine("Revisiones programadas:");
 
+            /*
             foreach (var revision in RevisionDataManager)
             {
 
                 Console.WriteLine($"{revision.Descripcion} - {revision.Fecha}");
-            }
+
+            }*/
         }
     }
 

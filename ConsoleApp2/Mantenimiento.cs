@@ -207,9 +207,36 @@ namespace ConsoleApp2
 
             }
         }
-        public static void NotificacionRenovacion()
+        public List<Mantenimiento> Search(DateTime FechaInicio, DateTime FechaFinal)
         {
-           Mantenimiento NotificacionRenovacion(Mantenimiento mantenimiento)
+            throw new NotImplementedException();
+        }
+        public static void NotificacionAceite()
+        {
+            DateTime ultimaFechaCambioAceite = DateTime.Now;
+
+            int DiasRecomendados = 90;
+
+            DateTime FechaCambioAceite = ultimaFechaCambioAceite.AddDays(DiasRecomendados);
+
+            DateTime fechaActual = DateTime.Now;
+            if (fechaActual >= FechaCambioAceite)
+            {
+                Console.WriteLine("Se necesita cambio de aceite en el vehículo");
+            }
+            else
+            {
+                Console.WriteLine("No es necesario cambiar el aceite en este momento.");
+            }
+        }
+
+        public Mantenimiento NotificacionRenovacion(Mantenimiento mantenimiento)
+        {
+            throw new NotImplementedException();
+            
+        }
+        static void NotificacionRenovacion()
+        {
             {
                 DateTime now = DateTime.Now;
 
@@ -229,36 +256,7 @@ namespace ConsoleApp2
                 {
                     Console.WriteLine("LA TECNOMECNICA todavía está vigente.");
                 }
-
-
-                throw new NotImplementedException();
-            }
-
-        }
-        public List<Mantenimiento> Search(DateTime FechaInicio, DateTime FechaFinal)
-        {
-            throw new NotImplementedException();
-        }
-        public static void NotificacionAceite()
-        { 
-            DateTime ultimaFechaCambioAceite = DateTime.Now;
-
-            int DiasRecomendados = 90;
-
-            DateTime FechaCambioAceite = ultimaFechaCambioAceite.AddDays(DiasRecomendados);
-            
-                DateTime fechaActual = DateTime.Now;
-            if (fechaActual >= FechaCambioAceite)
-            {
-                Console.WriteLine("Se necesita cambio de aceite en el vehículo");
-            }
-            else
-            {
-                Console.WriteLine("No es necesario cambiar el aceite en este momento.");
             }
         }
     }
-
 }
-
-

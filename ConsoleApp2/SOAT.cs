@@ -44,10 +44,10 @@ namespace ConsoleApp2
             }
             set
             {
-              _Numeroaseguradora = value;
+                _Numeroaseguradora = value;
             }
         }
-    
+
         public Soat(int NumeroAseguradora, DateTime FechaProxima, DateTime FechaFinal)
         {
             _Numeroaseguradora = NumeroAseguradora;
@@ -81,7 +81,7 @@ namespace ConsoleApp2
 
         public string FechaProximavencer(Soat soat)
         {
-          
+
             throw new NotImplementedException();
         }
 
@@ -90,5 +90,5 @@ namespace ConsoleApp2
             throw new NotImplementedException();
         }
     }
-
+}
 

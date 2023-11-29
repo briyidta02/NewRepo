@@ -10,13 +10,13 @@ namespace ConsoleApp2.Data
 {
     public class RecorridosDataManager
     {
-        public static void SaveRecorridos (Recorridos recorridos)
+        public static void SaveRecorridos(Recorridos recorridos)
         {
             Console.WriteLine(recorridos);
         }
         private const string DATA_FILE = "C:\\Users\\Tatiana\\Source\\Repos\\briyidta02\\NewRepo\\ConsoleApp2\\Data\\Recorridos.json";
 
-        public static Recorridos AddRecorridos(Recorridos recorridos) 
+        public static Recorridos AddRecorridos(Recorridos recorridos)
         {
             try
             {
@@ -48,6 +48,7 @@ namespace ConsoleApp2.Data
             File.WriteAllText(DATA_FILE, json);
         }
     }
+}
 
 
 
