@@ -61,7 +61,7 @@ namespace ConsoleApp2
         public static void MostrarRevisionesProgramadas()
         {
             Console.WriteLine("Revisiones programadas:");
-
+            RevisionDataManager.
             /*
             foreach (var revision in RevisionDataManager)
             {

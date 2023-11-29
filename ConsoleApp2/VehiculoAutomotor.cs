@@ -82,6 +82,12 @@ namespace ConsoleApp2
             }
         }
         private int _Modelo;
+        private Soat _Soat;
+
+        public Soat soat
+        {
+            get { return _Soat;}
+        }
         internal string Id;
 
         public int Modelo
@@ -97,6 +103,7 @@ namespace ConsoleApp2
         }
         private int _Recorridos;
        
+
        
 
         public VehiculoAutomotor(string Marca, int alineamiento, string Velocidad, string color, string Tipo, int Modelo)
@@ -107,6 +114,7 @@ namespace ConsoleApp2
             _Color = color;
             _Tipo = Tipo;
             _Modelo = Modelo;
+            _Soat = new Soat();
            
 
         }

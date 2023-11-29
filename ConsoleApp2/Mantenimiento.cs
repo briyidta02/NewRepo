@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace ConsoleApp2
 {
 
-    public class Mantenimiento : Itecnomecanica
+    public class Mantenimiento : Itecnomecanica 
     {
         private DateTime _Fechainicio;
         public DateTime FechaInicio
@@ -179,7 +179,7 @@ namespace ConsoleApp2
 
         }
 
-        public static void MostrarMenu()
+        public static void MostrarMenurevision()
         {
 
             Console.WriteLine("MENÚ");
@@ -189,7 +189,7 @@ namespace ConsoleApp2
 
             while (true)
             {
-                MostrarMenu();
+                MostrarMenurevision();
                 string opcion = Console.ReadLine();
 
                 switch (opcion)

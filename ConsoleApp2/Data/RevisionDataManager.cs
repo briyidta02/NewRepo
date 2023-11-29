@@ -14,7 +14,7 @@ namespace ConsoleApp2.Data
         {
             Console.WriteLine(revisiones);
         }
-        private const string DATA_FILE = "C:\\Users\\USUARIO\\Source\\Repos\\briyidta02\\NewRepo\\ConsoleApp2\\Data\\Conductor.json";
+        private const string DATA_FILE = "C:\\Users\\USUARIO\\Source\\Repos\\briyidta02\\NewRepo\\ConsoleApp2\\Data\\Revision.json";
 
         public static Revision AddRevision(Revision revisiones)
         {
@@ -40,6 +40,7 @@ namespace ConsoleApp2.Data
 
             return revisiones;
         }
+
             private static string GetFileInfo()
             {
 
@@ -50,7 +51,7 @@ namespace ConsoleApp2.Data
                 File.WriteAllText(DATA_FILE, json);
             }
 
-
+            
         
 
     }

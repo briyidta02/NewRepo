@@ -55,6 +55,29 @@ namespace ConsoleApp2
             _fechafinal = FechaFinal;
         }
 
+        public Soat()
+        {
+            bool continueValidation = true;
+            while (continueValidation) {
+                Console.WriteLine("Ingrese el numero de aeguradora:");
+                try
+                {
+                    int NumeroAseguradora = int.Parse(Console.ReadLine());
+                    DateTime fechaExpedicion = DateTime.Now;
+                    DateTime fechVencimiento = DateTime.Now.AddYears(1);
+                    _Numeroaseguradora = NumeroAseguradora;
+                    _Fechaproxima = fechaExpedicion;
+                    _fechafinal = fechVencimiento;
+                }
+                catch
+                {
+                    Console.WriteLine("Intente denuevo");
+                }
+            }
+
+
+        }
+
         public Soat Notificacionsoat(Soat soat)
         {
             DateTime now = DateTime.Now;

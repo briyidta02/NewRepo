@@ -9,8 +9,9 @@ namespace ConsoleApp2
         static void Main(string[] args)
         {
             MENUPRINCIPAL();
-
             
+
+
             DateTime fechageneral = new DateTime(2023, 10, 21);
             /*
       
@@ -112,7 +113,27 @@ namespace ConsoleApp2
                     Console.WriteLine();
                     INFORMACIONMANTENIMIENTO();
                     break;
-                   
+                case 6:
+                    Console.WriteLine("Seleccionaste la opcion 6");
+                    Console.WriteLine();
+                    // TODO: crear carro
+
+                    break;
+                case 7:
+                    Console.WriteLine("Seleccionaste la opcion 7");
+                    Console.WriteLine();
+                    Mantenimiento.MostrarMenurevision();
+                    break;
+                case 8:
+                    Console.WriteLine("Seleccionaste la opcion 8");
+                    Console.WriteLine();
+                    Licencia.Renovacion();
+                    break;
+                case 9:
+                    Console.WriteLine("Seleccionaste la opcion 8");
+                    Console.WriteLine();
+
+                    break;
             }
             MENUPRINCIPAL();
         }
