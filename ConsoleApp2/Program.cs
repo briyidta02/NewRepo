@@ -127,7 +127,7 @@ namespace ConsoleApp2
                 case 8:
                     Console.WriteLine("Seleccionaste la opcion 8");
                     Console.WriteLine();
-                    Licencia.Renovacion();
+                    
                     break;
                 case 9:
                     Console.WriteLine("Seleccionaste la opcion 8");

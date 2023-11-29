@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleApp2.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -88,27 +89,30 @@ namespace ConsoleApp2
 
         }
 
+        public Licencia RegistroLicencia(Licencia licencia)
+        {
+            public static void RegistrarLicencia()
+            {
+                Console.Write("Ingrese el numero de licencia: ");
+                string licencia = Console.ReadLine();
+
+
+                Console.Write("Ingrese la fecha de expediecion(YYYY-MM-DD): ");
+                DateTime FechaVigencia = DateTime.Parse(Console.ReadLine());
+
+                Console.Write("Ingrese la fecha de vencimiento(YYYY-MM-DD): ");
+                DateTime FechaExpediente = DateTime.Parse(Console.ReadLine());
+            
+                Revision fechaslicencias = new Revision(descripcion, fecha);
+                LicenciaDataManager.AddLicencia(fechaslicencias);
+
+                Console.WriteLine("Revisión registrada con éxito.");
+                throw new NotImplementedException();
+                throw new NotImplementedException();
+        }
+
         public Licencia Renovacion(Licencia licencia)
         {
-            DateTime now = DateTime.Now;
-
-            DateTime startDate = new DateTime(2021, 08, 02);
-
-            DateTime endDate = new DateTime(2024, 08, 02);
-
-            TimeSpan timeRemaining = endDate - now;
-
-            int daysThreshold = 5;
-
-            if (timeRemaining.TotalDays <= daysThreshold)
-            {
-                Console.WriteLine($"¡Atención! LA LICENCIA   está próximo a vencer en {timeRemaining.TotalDays} días.");
-            }
-            else
-            {
-                Console.WriteLine("LA LICENCIA todavía está vigente.");
-            }
-
             throw new NotImplementedException();
         }
 
@@ -117,5 +121,5 @@ namespace ConsoleApp2
             throw new NotImplementedException();
         }
     }
-}
+
 
