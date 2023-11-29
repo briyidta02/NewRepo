@@ -12,7 +12,7 @@ namespace ConsoleApp2
 
             
             DateTime fechageneral = new DateTime(2023, 10, 21);
-
+            /*
       
             Console.WriteLine("**INFORMACION VEHICULO**");
             VehiculoAutomotor vehiculoautomotor = new VehiculoAutomotor("BMW", 0, "media", "Rojo", "Deportivo", 2018);
