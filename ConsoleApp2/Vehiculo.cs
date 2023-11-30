@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ConsoleApp2.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,6 +28,27 @@ namespace ConsoleApp2
 
         public VehiculoAutomotor RegistroVehiculo(VehiculoAutomotor vehiculoAutomotor)
         {
+
+            Console.Write("Ingrese la marca ");
+            string numerolicencia = Console.ReadLine();
+
+
+            Console.Write("Ingrese nivel de alineamiento ");
+            string FechaVigencia = Console.ReadLine();
+
+            Console.Write("Ingrese velozidad ");
+            string FechaExpediente = Console.ReadLine();
+
+            Console.Write("Ingrese velozidad ");
+            string color = Console.ReadLine();
+
+            Console.Write("Ingrese velozidad ");
+            string tipo = Console.ReadLine();
+
+            Console.Write("Ingrese velozidad ");
+            string modelo = Console.ReadLine();
+
+            LicenciaDataManager.AddLicencia(FechaVigencia, FechaExpediente);
             throw new NotImplementedException();
         }
 
