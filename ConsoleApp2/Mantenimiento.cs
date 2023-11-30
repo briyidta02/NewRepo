@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 namespace ConsoleApp2
 {
 
-    public class Mantenimiento : Itecnomecanica 
+    public class Mantenimiento : Itecnomecanica
     {
         private DateTime _Fechainicio;
         public DateTime FechaInicio
@@ -233,30 +233,31 @@ namespace ConsoleApp2
         public Mantenimiento NotificacionRenovacion(Mantenimiento mantenimiento)
         {
             throw new NotImplementedException();
-            
         }
-        static void NotificacionRenovacion()
-        {
+
+            static void NotificacionRenovacion()
             {
-                DateTime now = DateTime.Now;
-
-                DateTime startDate = new DateTime(2022, 06, 02);
-
-                DateTime endDate = new DateTime(2023, 06, 02);
-
-                TimeSpan timeRemaining = endDate - now;
-
-                int daysThreshold = 5;
-
-                if (timeRemaining.TotalDays <= daysThreshold)
                 {
-                    Console.WriteLine($"¡Atención! LA TECNOMECANICA  está próximo a vencer en {timeRemaining.TotalDays} días.");
-                }
-                else
-                {
-                    Console.WriteLine("LA TECNOMECNICA todavía está vigente.");
+                    DateTime now = DateTime.Now;
+
+                    DateTime startDate = new DateTime(2022, 06, 02);
+
+                    DateTime endDate = new DateTime(2023, 06, 02);
+
+                    TimeSpan timeRemaining = endDate - now;
+
+                    int daysThreshold = 5;
+
+                    if (timeRemaining.TotalDays <= daysThreshold)
+                    {
+                        Console.WriteLine($"¡Atención! LA TECNOMECANICA  está próximo a vencer en {timeRemaining.TotalDays} días.");
+                    }
+                    else
+                    {
+                        Console.WriteLine("LA TECNOMECNICA todavía está vigente.");
+                    }
                 }
             }
-        }
+        
     }
 }

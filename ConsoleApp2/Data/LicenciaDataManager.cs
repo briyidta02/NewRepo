@@ -30,24 +30,16 @@ namespace ConsoleApp2.Data
             }
             catch (Exception ex) 
             {
-                Console.ForegroundColor = ConsoleColor.Blue;
-                Console.WriteLine(ex.Message);
-                Console.ForegroundColor = ConsoleColor.Green;
-
+                Logger.LogError(ex);
             }
             return licencia;
         }
 
-        public static Licencia UpdateLicencia(Licencia licencia)
+        internal static void AddLicencia(DateTime fechaVigencia, DateTime fechaExpediente)
         {
-            try 
-            { 
-            }
-            catch (Exception ex)
-            {
-                Logger.LogError(ex);
-            }
+            throw new NotImplementedException();
         }
+
         private static string GetFileInfo()
         {
             return File.ReadAllText(DATA_FILE);

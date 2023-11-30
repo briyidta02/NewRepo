@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp2
 {
-    public class Licencia: ILicencia
+    public class Licencia : ILicencia
     {
 
         private int _Identificacionpersona;
@@ -48,8 +48,8 @@ namespace ConsoleApp2
                 _Fechaexpediente = value;
             }
         }
-       
-  
+
+
         private string _Servicio;
         public string Servicio
         {
@@ -79,7 +79,8 @@ namespace ConsoleApp2
 
         }
 
-        public Licencia(int IdentificacionPersona, DateTime FechaVigencia, DateTime FechaExpediente, string Servicio, string NombreConductor) {
+        public Licencia(int IdentificacionPersona, DateTime FechaVigencia, DateTime FechaExpediente, string Servicio, string NombreConductor)
+        {
 
             _Identificacionpersona = IdentificacionPersona;
             _Fechavigencia = FechaVigencia;
@@ -88,34 +89,60 @@ namespace ConsoleApp2
             _Nombreconductor = NombreConductor;
 
         }
+   
 
+
+            
+        
+
+        public static void RegistroLicencia() { }
         public Licencia RegistroLicencia(Licencia licencia)
         {
-           
             
-                Console.Write("Ingrese el numero de licencia: ");
-                string licencia = Console.ReadLine();
+
+            Console.Write("Ingrese el numero de licencia: ");
+            string numerolicencia = Console.ReadLine();
 
 
-                Console.Write("Ingrese la fecha de expediecion(YYYY-MM-DD): ");
-                DateTime FechaVigencia = DateTime.Parse(Console.ReadLine());
+            Console.Write("Ingrese la fecha de expediecion(YYYY-MM-DD): ");
+            DateTime FechaVigencia = DateTime.Parse(Console.ReadLine());
 
-                Console.Write("Ingrese la fecha de vencimiento(YYYY-MM-DD): ");
-                DateTime FechaExpediente = DateTime.Parse(Console.ReadLine());
+            Console.Write("Ingrese la fecha de vencimiento(YYYY-MM-DD): ");
+            DateTime FechaExpediente = DateTime.Parse(Console.ReadLine());
 
-                Revision fechaslicencias = new Revision(descripcion, fecha);
-                LicenciaDataManager.AddLicencia(fechaslicencias);
 
-                Console.WriteLine("Revisión registrada con éxito.");
-                throw new NotImplementedException();
-                throw new NotImplementedException();
+            LicenciaDataManager.AddLicencia(FechaVigencia, FechaExpediente);
 
-                return licencia ();
-            
+            Console.WriteLine("Revisión registrada con éxito.");
+            throw new NotImplementedException();
+            throw new NotImplementedException();
+
         }
-
+        public static void Renovacion() { }
         public Licencia Renovacion(Licencia licencia)
         {
+            DateTime now = DateTime.Now;
+
+            DateTime FechaVigencia = new DateTime(2021, 08, 02);
+
+            DateTime FechaExpediente = new DateTime(2024, 08, 02);
+
+            TimeSpan timeRemaining = FechaExpediente - now;
+
+            int daysThreshold = 5;
+
+            if (timeRemaining.TotalDays <= daysThreshold)
+            {
+                Console.WriteLine($"¡Atención! LA LICENCIA   está próximo a vencer en {timeRemaining.TotalDays} días.");
+            }
+            else
+            {
+                Console.WriteLine("LA LICENCIA todavía está vigente.");
+            }
+
+            throw new NotImplementedException();
+
+
             throw new NotImplementedException();
         }
 
@@ -124,5 +151,5 @@ namespace ConsoleApp2
             throw new NotImplementedException();
         }
     }
-
+}
 
