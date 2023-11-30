@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using ConsoleApp2.Logs;
+using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System;
 using System.Collections.Generic;
@@ -35,6 +36,17 @@ namespace ConsoleApp2.Data
 
             }
             return licencia;
+        }
+
+        public static Licencia UpdateLicencia(Licencia licencia)
+        {
+            try 
+            { 
+            }
+            catch (Exception ex)
+            {
+                Logger.LogError(ex);
+            }
         }
         private static string GetFileInfo()
         {

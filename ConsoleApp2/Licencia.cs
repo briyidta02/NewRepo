@@ -91,8 +91,8 @@ namespace ConsoleApp2
 
         public Licencia RegistroLicencia(Licencia licencia)
         {
-            public static void RegistrarLicencia()
-            {
+           
+            
                 Console.Write("Ingrese el numero de licencia: ");
                 string licencia = Console.ReadLine();
 
@@ -102,13 +102,16 @@ namespace ConsoleApp2
 
                 Console.Write("Ingrese la fecha de vencimiento(YYYY-MM-DD): ");
                 DateTime FechaExpediente = DateTime.Parse(Console.ReadLine());
-            
+
                 Revision fechaslicencias = new Revision(descripcion, fecha);
                 LicenciaDataManager.AddLicencia(fechaslicencias);
 
                 Console.WriteLine("Revisión registrada con éxito.");
                 throw new NotImplementedException();
                 throw new NotImplementedException();
+
+                return licencia ();
+            
         }
 
         public Licencia Renovacion(Licencia licencia)
