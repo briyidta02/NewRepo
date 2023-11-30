@@ -61,14 +61,10 @@ namespace ConsoleApp2
         public static void MostrarRevisionesProgramadas()
         {
             Console.WriteLine("Revisiones programadas:");
-            RevisionDataManager.
-            /*
-            foreach (var revision in RevisionDataManager)
-            {
+            RevisionDataManager.SaveRevision();
 
-                Console.WriteLine($"{revision.Descripcion} - {revision.Fecha}");
 
-            }*/
+            }
         }
     }
 

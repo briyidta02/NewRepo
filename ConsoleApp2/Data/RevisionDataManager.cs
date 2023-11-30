@@ -51,8 +51,9 @@ namespace ConsoleApp2.Data
                 File.WriteAllText(DATA_FILE, json);
             }
 
-            
-        
-
+        internal static void SaveRevision()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

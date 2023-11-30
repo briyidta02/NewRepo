@@ -89,13 +89,6 @@ namespace ConsoleApp2
             _Nombreconductor = NombreConductor;
 
         }
-   
-
-
-            
-        
-
-       
         public Licencia RegistroLicencia(Licencia licencia)
         {
             
