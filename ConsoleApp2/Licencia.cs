@@ -95,7 +95,7 @@ namespace ConsoleApp2
             
         
 
-        public static void RegistroLicencia() { }
+       
         public Licencia RegistroLicencia(Licencia licencia)
         {
             
@@ -118,7 +118,7 @@ namespace ConsoleApp2
             throw new NotImplementedException();
 
         }
-        public static void Renovacion() { }
+       
         public Licencia Renovacion(Licencia licencia)
         {
             DateTime now = DateTime.Now;
