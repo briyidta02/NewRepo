@@ -10,7 +10,7 @@ namespace ConsoleApp2
     {
         VehiculoAutomotor RegistroVehiculo(VehiculoAutomotor vehiculoAutomotor);
 
-        string GenerarFechasMantenimiento(VehiculoAutomotor vehiculoAutomotor);
+       
 
         List<VehiculoAutomotor> Search(string Marca, int alineamiento, string Velocidad, string color, string Tipo, int Modelo); 
     }

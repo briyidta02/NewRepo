@@ -117,6 +117,7 @@ namespace ConsoleApp2
                  case 6:
                      Console.WriteLine("Seleccionaste la opcion 6");
                      Console.WriteLine();
+                     Console.WriteLine();
                     Licencia RegistroLicencia ();
 
                      break;

@@ -16,15 +16,6 @@ namespace ConsoleApp2
             
         }
 
-        public string EstablecerFechasMantenimiento(VehiculoAutomotor vehiculoAutomotor)
-        {
-            throw new NotImplementedException();
-        }
-
-        public string GenerarFechasMantenimiento(VehiculoAutomotor vehiculoAutomotor)
-        {
-            throw new NotImplementedException();
-        }
 
         public VehiculoAutomotor RegistroVehiculo(VehiculoAutomotor vehiculoAutomotor)
         {
