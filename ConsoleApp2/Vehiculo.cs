@@ -48,7 +48,7 @@ namespace ConsoleApp2
             Console.Write("Ingrese velozidad ");
             string modelo = Console.ReadLine();
 
-            LicenciaDataManager.AddLicencia(FechaVigencia, FechaExpediente);
+            VehiculoAutomotorDataManager.AddVehiculoAutomotor(FechaVigencia, FechaExpediente);
             throw new NotImplementedException();
         }
 

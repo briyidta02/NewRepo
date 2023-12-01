@@ -11,7 +11,7 @@ namespace ConsoleApp2.Data
     public static class  VehiculoAutomotorDataManager
     {
         private const string DATA_FILE = "C:\\Users\\Tatiana\\Source\\Repos\\briyidta02\\NewRepo\\ConsoleApp2\\Data\\VehiculoAutomotor";
-        public static VehiculoAutomotor AddVehiculoAutomotor(VehiculoAutomotor vehiculoautomotor)
+        public static VehiculoAutomotor AddVehiculoAutomotor(string? fechaVigencia, VehiculoAutomotor vehiculoautomotor)
         {
             try
             {
@@ -36,6 +36,12 @@ namespace ConsoleApp2.Data
 
             return vehiculoautomotor;
         }
+
+        internal static void AddVehiculoAutomotor(string? fechaVigencia, string? fechaExpediente)
+        {
+            throw new NotImplementedException();
+        }
+
         private static string GetFileInfo()
         {
             return File.ReadAllText(DATA_FILE);
